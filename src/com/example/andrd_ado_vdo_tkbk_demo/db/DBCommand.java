@@ -1,4 +1,8 @@
+package com.example.andrd_ado_vdo_tkbk_demo.db;
+
 public class DBCommand implements java.io.Serializable {
+    // must be the same on client and server sides
+    private static final long serialVersionUID = 1132298746559575197L;
     private String name;
     private String parameter;
 
@@ -25,7 +29,7 @@ public class DBCommand implements java.io.Serializable {
 
     @Override
     public String toString() {
-        return "DBCommand{" +
+        return "com.example.andrd_ado_vdo_tkbk_demo.db.DBCommand{" +
                 "name='" + name + '\'' +
                 ", parameter='" + parameter + '\'' +
                 '}';
